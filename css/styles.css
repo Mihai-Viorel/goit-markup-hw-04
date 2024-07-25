@@ -488,10 +488,16 @@ address {
   background-color: var(--iris);
 }
 
+.main-our_team-icon_element_container:hover,
+.main-our_team-icon_element_container:focus {
+  background-color: var(--ocean);
+}
+
 .main-our_team-icon {
   width: 16px;
   height: 16px;
   margin: 12px;
+
 }
 
 /* ================ footer svgs ================ */
@@ -529,14 +535,105 @@ address {
   background-color: var(--iris);
 }
 
+.footer-icon_element_container:hover,
+.footer-icon_element_container:focus {
+  background-color: var(--green);
+}
+
 .footer-icon {
   width: 24px;
   height: 24px;
   margin: 8px;
 }
 
+/* ================ Our Portfolio Project Card Text Overlay ================ */
+
+.main_our_portfolio_list_element:hover,
+.main_our_portfolio_list_element:focus {
+  box-shadow: 
+  0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
+  0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+}
+
+.overlay-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.main_our_portfolio_list_element-text-overlay {
+  width: 360px;
+  height: 300px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  position: absolute;
+  background-color: var(--iris);
+  transform: translatey(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay-container:hover .main_our_portfolio_list_element-text-overlay,
+.overlay-container:focus .main_our_portfolio_list_element-text-overlay {
+  transform: translatey(0);
+}
+
+.main_our_portfolio_list_element-text-overlay p {
+  width: 80%;
+  padding-left: 25px;
+  padding-top: 45px;
+  padding-bottom: 73px;
+  color: #fff;
+}
 
 
+/* ================ Current tab overlay ================ */
+
+.nav-item-active {
+  position: relative;
+}
+
+.nav-item-active::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 69px;
+  width: 48px;
+  height: 4px;
+  background-color: var(--ocean);
+  border: none;
+  border-radius: 2px;
+}
+
+/* ================ Transitions ================ */
+
+.nav-item a,
+.contact-item a {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-section_button {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-our_team-icon_element_container,
+.footer-icon_element_container {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ================ Our Team shading ================ */
+
+.main_our_team_list_element {
+  box-shadow:
+  0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+  0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+}
 
 
 
