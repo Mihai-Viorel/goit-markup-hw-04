@@ -446,6 +446,8 @@ address {
 
 /* --------------------- Svgs, transitions and background images --------------------- */
 
+/* ================ Hero background image ================ */
+
 .hero_section-container {
   background-image: 
   linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
@@ -453,7 +455,85 @@ address {
   background-size: cover;
 }
 
+/* ================ advantages svgs ================ */
 
+.main_advantages_icon-container {
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  background-color: var(--cloud);
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+}
+
+.main_advantages_icon {
+  width: 64px;
+  height: 64px;
+  margin: 24px 100px;
+}
+
+/* ================ our team svgs ================ */
+
+.main-our_team-icon_container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.main-our_team-icon_element_container {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--iris);
+}
+
+.main-our_team-icon {
+  width: 16px;
+  height: 16px;
+  margin: 12px;
+}
+
+/* ================ footer svgs ================ */
+
+.footer-container {
+  display: flex;
+}
+
+.footer-social_media_container {
+  width: 208px;
+  height: 80px;
+  margin: 0px 0px 0px 120px;
+}
+
+.footer-social_media-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin: 0px 0px 16px 0px;
+}
+
+.footer-icon_container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer-icon_element_container {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--iris);
+}
+
+.footer-icon {
+  width: 24px;
+  height: 24px;
+  margin: 8px;
+}
 
 
 
