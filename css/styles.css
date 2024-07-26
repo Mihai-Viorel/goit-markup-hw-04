@@ -563,7 +563,8 @@ address {
 /* ================ Our Portfolio Project Card Text Overlay ================ */
 
 .main_our_portfolio_list_element {
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main_our_portfolio_list_element:hover,
