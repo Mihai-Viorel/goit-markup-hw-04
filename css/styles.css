@@ -510,12 +510,16 @@ address {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
+}
+
+.footer-legend_container {
+  margin-right: 120px;
 }
 
 .footer-social_media_container {
   width: 208px;
   height: 80px;
-  margin: 0px 0px 0px 120px;
 }
 
 .footer-social_media-title {
@@ -524,7 +528,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white);
-  margin: 0px 0px 16px 0px;
+  margin-bottom: 16px;
 }
 
 .footer-icon_container {
