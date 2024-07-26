@@ -540,20 +540,31 @@ address {
 .footer-icon_element_container {
   width: 40px;
   height: 40px;
+}
+
+.footer-social-link {
+  width: 100%;
+  height: 100%;
   border: none;
   border-radius: 50%;
   background-color: var(--iris);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.footer-icon_element_container:hover,
-.footer-icon_element_container:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: var(--green);
 }
 
-.footer-icon {
+.footer-social-link svg {
   width: 24px;
   height: 24px;
-  margin: 8px;
+}
+
+.footer-icon {
+  fill: var(--cloud);
 }
 
 /* ================ Our Portfolio Project Card Text Overlay ================ */
@@ -612,7 +623,7 @@ address {
 }
 
 .main-our_team-icon_element_container,
-.footer-icon_element_container {
+.footer-social-link {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
